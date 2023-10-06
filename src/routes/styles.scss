@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Gotham Book';
+	src: url('/GothamBook.ttf');
+}
+
+@import '@fontsource-variable/nunito';
+
+* {
+	margin: 0;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Nunito Variable', sans-serif;
+	letter-spacing: -0.5px;
+	font-weight: 700;
+}
