@@ -1,13 +1,16 @@
 <script lang="ts">
 	import Album from '$lib/assets/trench.jpg';
+	import TOP from '$lib/assets/twenty_one_pilots.jpg';
 
-	const imageSize = 45;
+	import Fa from 'svelte-fa';
+	import { faClock } from '@fortawesome/free-solid-svg-icons';
+	import SongCard from '$lib/SongCard.svelte';
 </script>
 
 <div class="playlist">
 	<div class="header">
 		<div class="left">
-			<img width="190" src={Album} alt="Album cover" />
+			<img width="190" src={TOP} alt="Album cover" />
 		</div>
 		<div class="right">
 			<p class="label">Playlist</p>
@@ -15,58 +18,37 @@
 		</div>
 	</div>
 	<div class="songs">
-		<div class="song">
+		<div class="song labels">
 			<div class="left">
-				<p class="number">1</p>
-				<img src={Album} alt="song cover" width={imageSize} />
-				<div class="info">
-					<p class="title">Twitter</p>
-					<p class="author">x.com</p>
+				<div class="title">
+					<p class="number">#</p>
+					<p>Title</p>
+				</div>
+				<div class="album">
+					<p>Album</p>
 				</div>
 			</div>
 			<div class="right">
-				<p class="album">ssebastianoo</p>
+				<div />
+				<Fa icon={faClock} />
 			</div>
 		</div>
-		<div class="song">
-			<div class="left">
-				<p class="number">1</p>
-				<img src={Album} alt="song cover" width={imageSize} />
-				<div class="info">
-					<p class="title">Twitter</p>
-					<p class="author">x.com</p>
-				</div>
-			</div>
-			<div class="right">
-				<p class="album">ssebastianoo</p>
-			</div>
-		</div>
-		<div class="song">
-			<div class="left">
-				<p class="number">1</p>
-				<img src={Album} alt="song cover" width={imageSize} />
-				<div class="info">
-					<p class="title">Twitter</p>
-					<p class="author">x.com</p>
-				</div>
-			</div>
-			<div class="right">
-				<p class="album">ssebastianoo</p>
-			</div>
-		</div>
-		<div class="song">
-			<div class="left">
-				<p class="number">1</p>
-				<img src={Album} alt="song cover" width={imageSize} />
-				<div class="info">
-					<p class="title">Twitter</p>
-					<p class="author">x.com</p>
-				</div>
-			</div>
-			<div class="right">
-				<p class="album">ssebastianoo</p>
-			</div>
-		</div>
+		<SongCard
+			number={1}
+			title="Github"
+			artist="github.com"
+			album="ssebastianoo"
+			cover={Album}
+			url={'https://github.com/ssebastianoo'}
+		/>
+		<SongCard
+			number={2}
+			title="Twitter"
+			artist="x.com"
+			album="ssebastianoo"
+			cover={Album}
+			url={'https://twitter.com/ssebastianoo'}
+		/>
 	</div>
 </div>
 
@@ -74,44 +56,37 @@
 	.songs {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
 		margin-top: 20px;
 
+		.labels {
+			opacity: 0.5;
+		}
+
 		.song {
+			all: unset;
+			padding: 10px;
 			display: flex;
+			align-items: center;
 			justify-content: space-between;
-			align-items: centere;
 			font-weight: 400;
 			font-size: 0.85em;
 
 			.left {
 				display: flex;
-				align-items: center;
-				gap: 10px;
-
-				.info {
-					display: flex;
-					flex-direction: column;
-					line-height: 18px;
-
-					.title {
-						font-weight: 600;
-					}
-
-					.author {
-						opacity: 0.8;
-					}
-				}
+				width: calc(100% - 60px);
 			}
 
 			.right {
 				display: flex;
+				justify-content: space-between;
+				width: 60px;
+			}
+
+			.title {
+				display: flex;
 				align-items: center;
 				gap: 10px;
-
-				.album {
-					opacity: 0.8;
-				}
+				width: 60%;
 			}
 		}
 	}

@@ -18,7 +18,7 @@
 		display: flex;
 		align-items: center;
 		gap: 15px;
-		border-radius: 10px;
+		border-radius: 5px;
 		background-color: hsla(0, 0%, 100%, 0.1);
 		backdrop-filter: blur(10px);
 		overflow: hidden;
