@@ -1,17 +1,20 @@
 <script lang="ts">
 	export let cover: string;
 	export let title: string;
+	export let url: string;
 </script>
 
-<div class="card">
+<a class="card" href={url}>
 	<img width="74" src={cover} alt="album cover" />
 	<h3>{title}</h3>
-</div>
+</a>
 
 <style lang="scss">
 	@import 'src/variables';
 
 	.card {
+		all: unset;
+		cursor: pointer;
 		display: flex;
 		align-items: center;
 		gap: 15px;
@@ -21,6 +24,11 @@
 		overflow: hidden;
 		font-size: 0.8em;
 		width: calc(33% - 5px);
+		transition: background-color 0.2s ease-in-out;
+
+		&:hover {
+			background-color: hsla(0, 0%, 100%, 0.221);
+		}
 	}
 
 	@media (max-width: 1200px) {
