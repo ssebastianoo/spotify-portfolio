@@ -14,7 +14,7 @@
 			<Fa icon={faHouse} />
 			<p>Home</p>
 		</a>
-		<a class="link" href="#search">
+		<a class="link" href="/">
 			<Fa icon={faMagnifyingGlass} />
 			<p>Search</p>
 		</a>
