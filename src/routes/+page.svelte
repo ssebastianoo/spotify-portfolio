@@ -11,8 +11,8 @@
 <div class="list">
 	<PlaylistCard title="Projects" cover={Blurryface} url={'/projects'} />
 	<PlaylistCard title="Social" cover={TOP} url={'/social'} />
-	<PlaylistCard title="Skills" cover={Vessel} url={'/skills'} />
-	<PlaylistCard title="Hobbies" cover={Trench} url={'/hobbies'} />
+	<PlaylistCard title="Skills" cover={Vessel} url={'#'} />
+	<PlaylistCard title="Hobbies" cover={Trench} url={'#'} />
 </div>
 
 <style lang="scss">
