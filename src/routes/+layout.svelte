@@ -5,6 +5,7 @@
 	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
 	import Vessel from '$lib/assets/covers/vessel.jpg';
 	import Trench from '$lib/assets/covers/trench.jpg';
+	import seb from '$lib/assets/seb.png';
 	import './styles.scss';
 	import Fa from 'svelte-fa';
 	import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
@@ -22,6 +23,11 @@
 		</a>
 	</div>
 	<div class="section main">
+		<header>
+			<a href="/about">
+				<img width="30" src={seb} alt="my avatar" />
+			</a>
+		</header>
 		<slot />
 	</div>
 	<div class="section library">
@@ -87,6 +93,30 @@
 		grid-row: 1 / 3;
 		background: linear-gradient(146deg, rgba(66, 32, 35, 1) -20%, rgba(18, 18, 18, 1) 100%);
 		padding: 20px;
+		position: relative;
+
+		header {
+			display: flex;
+			justify-content: flex-end;
+			z-index: 999;
+			position: relative;
+			height: 34px;
+			align-items: center;
+
+			a {
+				display: flex;
+			}
+
+			img {
+				border: 2px solid black;
+				border-radius: 50%;
+				transition: scale 0.1s ease-in-out;
+
+				&:hover {
+					scale: 1.1;
+				}
+			}
+		}
 	}
 
 	.library {
