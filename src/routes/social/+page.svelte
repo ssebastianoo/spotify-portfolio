@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Github from '$lib/assets/github.png';
-	import Twitter from '$lib/assets/twitter.png';
+	import Github from '$lib/assets/social/github.png';
+	import Twitter from '$lib/assets/social/twitter.png';
 	import Playlist from '$lib/Playlist.svelte';
 	import SongCard from '$lib/SongCard.svelte';
-	import TOP from '$lib/assets/twenty_one_pilots.jpg';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
 </script>
 
 <Playlist title={'Social'} cover={TOP}>

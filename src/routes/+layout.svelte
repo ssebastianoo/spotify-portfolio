@@ -1,9 +1,11 @@
 <script lang="ts">
 	import Player from '$lib/Player.svelte';
-	import PlaylistCard from '$lib/PlaylistCard.svelte';
-	import Album from '$lib/assets/trench.jpg';
+	import LibraryCard from '$lib/LibraryCard.svelte';
+	import Blurryface from '$lib/assets/covers/blurryface.jpg';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
+	import Vessel from '$lib/assets/covers/vessel.jpg';
+	import Trench from '$lib/assets/covers/trench.jpg';
 	import './styles.scss';
-
 	import Fa from 'svelte-fa';
 	import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 </script>
@@ -24,6 +26,12 @@
 	</div>
 	<div class="section library">
 		<p>Your Library</p>
+		<div class="playlists">
+			<LibraryCard title="Projects" artist="seb" cover={Blurryface} url="/projects" />
+			<LibraryCard title="Social" artist="seb" cover={TOP} url="/social" />
+			<LibraryCard title="Skills" artist="seb" cover={Vessel} url="/skills" />
+			<LibraryCard title="Hobbies" artist="seb" cover={Trench} url="/hobbies" />
+		</div>
 	</div>
 	<div class="section player">
 		<Player />
@@ -84,7 +92,16 @@
 	.library {
 		grid-row: 2 / 3;
 		background-color: $background;
-		padding: 20px;
+		padding: 10px;
+
+		p {
+			padding: 10px;
+		}
+
+		.playlists {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	.player {

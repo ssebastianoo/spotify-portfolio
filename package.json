@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource-variable/nunito": "^5.0.13",
+		"@fontsource-variable/work-sans": "^5.0.13",
 		"@fortawesome/free-brands-svg-icons": "^6.4.2",
 		"@fortawesome/free-solid-svg-icons": "^6.4.2",
 		"svelte-fa": "^3.0.4"

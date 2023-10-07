@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Album from '$lib/assets/trench.jpg';
+	import Album from '$lib/assets/covers/trench.jpg';
 
 	import Fa from 'svelte-fa';
 	import {

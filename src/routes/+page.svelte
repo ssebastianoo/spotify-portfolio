@@ -1,18 +1,18 @@
 <script lang="ts">
 	import PlaylistCard from '$lib/PlaylistCard.svelte';
 
-	import TOP from '$lib/assets/twenty_one_pilots.jpg';
-	import Vessel from '$lib/assets/vessel.jpg';
-	import Blurryface from '$lib/assets/blurryface.jpg';
-	import Trench from '$lib/assets/trench.jpg';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
+	import Vessel from '$lib/assets/covers/vessel.jpg';
+	import Blurryface from '$lib/assets/covers/blurryface.jpg';
+	import Trench from '$lib/assets/covers/trench.jpg';
 </script>
 
 <h2>Hey there, I'm Seb!</h2>
 <div class="list">
-	<PlaylistCard title="Projects" cover={Blurryface} url={'/projects'} />
-	<PlaylistCard title="Social" cover={TOP} url={'/social'} />
-	<PlaylistCard title="Skills" cover={Vessel} url={'#'} />
-	<PlaylistCard title="Hobbies" cover={Trench} url={'#'} />
+	<PlaylistCard title="Projects" cover={Blurryface} url="/projects" />
+	<PlaylistCard title="Social" cover={TOP} url="/social" />
+	<PlaylistCard title="Skills" cover={Vessel} url="/skills" />
+	<PlaylistCard title="Hobbies" cover={Trench} url="/hobbies" />
 </div>
 
 <style lang="scss">

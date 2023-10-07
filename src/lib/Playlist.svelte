@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { faClock } from '@fortawesome/free-solid-svg-icons';
-	import TOP from '$lib/assets/twenty_one_pilots.jpg';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
 	import Fa from 'svelte-fa';
 
 	export let title: string;
@@ -10,7 +10,7 @@
 <div class="playlist">
 	<div class="header">
 		<div class="left">
-			<img width="190" src={cover} alt="Album cover" />
+			<img height="190" src={cover} alt="Album cover" />
 		</div>
 		<div class="right">
 			<p class="label">Playlist</p>
