@@ -25,17 +25,14 @@
 	</div>
 	<div class="about">
 		<p>
-			Sint in ullamco eiusmod ullamco ex tempor irure nostrud ad quis. Occaecat nisi consectetur ut
-			cupidatat. Sunt cupidatat enim officia proident cupidatat fugiat sint pariatur cillum aute
-			nisi nisi. Veniam commodo consequat do adipisicing quis sint nisi excepteur. Quis dolor
-			voluptate occaecat duis enim. Ex dolore do veniam sint dolore ex cupidatat dolor pariatur
-			mollit nostrud reprehenderit ut. Mollit nisi laboris qui nulla labore pariatur ut. Sint ea
-			mollit adipisicing Lorem nostrud duis amet reprehenderit magna quis amet. Aute elit
-			reprehenderit veniam nostrud laborum amet aute excepteur labore excepteur. Nostrud sit sint ea
-			aliquip nostrud consequat quis veniam cillum esse consectetur labore do dolor. Deserunt
-			occaecat ex ea et aute officia laboris est labore. Ipsum ut nisi in elit reprehenderit sunt
-			nisi ipsum sunt incididunt proident. Tempor commodo laborum excepteur ad elit dolore ipsum
-			enim et proident mollit.
+			I'm a Frontend developer from Venice, I'm not limited to JavaScript frameworks, I work with
+			various technologies, from UI tools to Backend languages, from Adobe to Docker, any technology
+			is welcome in my stack if it allows me to create new things.
+			<br /><br />
+			I'm currently studying multimedia arts in high school and I'm planning ot get a computer science
+			degree.
+			<br /><br />
+			I really love rock and indie music,
 		</p>
 	</div>
 </div>

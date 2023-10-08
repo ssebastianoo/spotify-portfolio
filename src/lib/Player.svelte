@@ -9,7 +9,8 @@
 		faForwardStep,
 		faRepeat,
 		faVolumeLow,
-		faBars
+		faBars,
+		faHeart
 	} from '@fortawesome/free-solid-svg-icons';
 </script>
 
@@ -20,14 +21,27 @@
 			<p class="title">Smithereens</p>
 			<p class="artists">Twenty One Pilots</p>
 		</div>
+		<div class="heart">
+			<Fa icon={faHeart} />
+		</div>
 	</div>
 	<div class="player">
 		<div class="controls">
-			<Fa icon={faShuffle} />
-			<Fa icon={faBackwardStep} />
-			<Fa icon={faPause} />
-			<Fa icon={faForwardStep} />
-			<Fa icon={faRepeat} />
+			<div class="icon">
+				<Fa icon={faShuffle} />
+			</div>
+			<div class="icon">
+				<Fa icon={faBackwardStep} />
+			</div>
+			<div class="icon">
+				<Fa icon={faPause} />
+			</div>
+			<div class="icon">
+				<Fa icon={faForwardStep} />
+			</div>
+			<div class="icon">
+				<Fa icon={faRepeat} />
+			</div>
 		</div>
 		<div class="time">
 			<span>0:58</span>
@@ -38,7 +52,15 @@
 		</div>
 	</div>
 	<div class="buttons">
-		<Fa icon={faBars} />
+		<div class="icon">
+			<Fa icon={faBars} />
+		</div>
+		<div class="mobile-icons">
+			<div class="icon">
+				<Fa icon={faHeart} />
+			</div>
+			<div class="icon triangle" />
+		</div>
 		<div class="volume">
 			<Fa icon={faVolumeLow} />
 			<div class="line">
@@ -56,6 +78,13 @@
 		height: calc(100% - 20px);
 		padding: 10px;
 		justify-content: space-between;
+
+		.icon {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	.info {
@@ -69,12 +98,28 @@
 
 		.title {
 			font-size: 0.9rem;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		.artists {
 			font-size: 0.8rem;
 			opacity: 0.6;
 			margin-top: 5px;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.heart {
+			font-size: 0.9em;
+			color: $accent;
+			cursor: pointer;
 		}
 	}
 
@@ -132,6 +177,56 @@
 
 			.line {
 				width: 100px;
+			}
+		}
+
+		.mobile-icons {
+			display: none;
+			align-items: center;
+			gap: 18px;
+
+			.triangle {
+				width: 0;
+				height: 0;
+				border-top: 8px solid transparent;
+				border-bottom: 8px solid transparent;
+				border-left: 13px solid white;
+			}
+		}
+	}
+
+	@media (max-width: $mobileView) {
+		.player {
+			display: none;
+		}
+
+		.player-container {
+			background-color: rgb(26, 24, 24);
+			border-radius: 10px;
+		}
+
+		.info {
+			gap: 10px;
+
+			img {
+				height: 42px;
+			}
+
+			.heart {
+				display: none;
+			}
+		}
+
+		.buttons {
+			gap: 18px;
+			transform: translateX(-8px);
+
+			.mobile-icons {
+				display: flex;
+			}
+
+			.volume {
+				display: none;
 			}
 		}
 	}

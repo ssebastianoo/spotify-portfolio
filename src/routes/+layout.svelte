@@ -8,7 +8,7 @@
 	import seb from '$lib/assets/seb.png';
 	import './styles.scss';
 	import Fa from 'svelte-fa';
-	import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+	import { faHouse, faMagnifyingGlass, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <div class="container">
@@ -41,6 +41,21 @@
 	</div>
 	<div class="section player">
 		<Player />
+
+		<footer>
+			<a class="link" href="/">
+				<Fa icon={faHouse} />
+				<p>Home</p>
+			</a>
+			<a class="link" href="/">
+				<Fa icon={faMagnifyingGlass} />
+				<p>Search</p>
+			</a>
+			<a class="link" href="/">
+				<Fa icon={faBarsStaggered} />
+				<p>Your Library</p>
+			</a>
+		</footer>
 	</div>
 </div>
 
@@ -56,6 +71,7 @@
 		height: calc(100vh - 20px);
 		gap: 10px;
 		font-size: 1.15rem;
+		position: relative;
 
 		.section {
 			border-radius: 15px;
@@ -137,5 +153,70 @@
 	.player {
 		grid-column: 1 / 3;
 		grid-row: 3 / 4;
+	}
+
+	footer {
+		display: none;
+		justify-content: center;
+		font-weight: 400;
+		margin-top: 15px;
+
+		.link {
+			all: unset;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 33%;
+			font-size: 0.85em;
+			gap: 4px;
+			cursor: pointer;
+
+			p {
+				font-size: 0.65em;
+			}
+		}
+	}
+
+	@media (max-width: $mobileView) {
+		.container {
+			display: block;
+			font-size: 1.15rem;
+			font-weight: 450;
+			padding: 20px;
+			width: calc(100% - 40px);
+			height: calc(100vh - 40px);
+
+			.section {
+				border-radius: unset;
+			}
+		}
+
+		.library,
+		.home {
+			display: none;
+		}
+
+		.main {
+			background: none;
+			border-radius: unset;
+			padding: 0;
+
+			header {
+				position: absolute;
+				right: 0;
+			}
+		}
+
+		.player {
+			position: absolute;
+			width: calc(100% - 40px);
+			bottom: 12px;
+			left: 20px;
+			border-radius: 10px !important;
+
+			footer {
+				display: flex;
+			}
+		}
 	}
 </style>
