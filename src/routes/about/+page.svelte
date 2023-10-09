@@ -1,6 +1,8 @@
 <script lang="ts">
 	import wallpaper from '$lib/assets/wallpaper.jpg';
 	import verified from '$lib/assets/icons/verified.png';
+	import Fa from 'svelte-fa';
+	import { faShuffle } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <img src={wallpaper} alt="Wallpaper" class="wallpaper" height="250px" width="100%" />
@@ -22,6 +24,19 @@
 			<div class="triangle" />
 		</div>
 		<p class="following">Following</p>
+	</div>
+	<div class="mobile-controls">
+		<div class="left">
+			<p class="following">Following</p>
+		</div>
+		<div class="right">
+			<div class="shuffle">
+				<Fa icon={faShuffle} />
+			</div>
+			<div class="play">
+				<div class="triangle" />
+			</div>
+		</div>
 	</div>
 	<div class="about">
 		<p>
@@ -102,34 +117,102 @@
 				scale: 1.05;
 			}
 		}
+	}
+
+	.play {
+		background-color: $accent;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: scale 0.2s ease-in-out;
+
+		.triangle {
+			width: 0;
+			height: 0;
+			border-top: 7px solid transparent;
+			border-bottom: 7px solid transparent;
+			border-left: 12px solid rgb(0, 0, 0);
+			transform: translateX(1px);
+		}
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+
+	.mobile-controls {
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 25px;
+
+		.right {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+		}
+
+		.following {
+			padding: 6px 8px;
+			border: 1px solid white;
+			border-radius: 2px;
+			font-size: 0.85em;
+		}
+
+		.shuffle {
+			font-size: 1.35em;
+		}
 
 		.play {
-			background-color: $accent;
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-			transition: scale 0.2s ease-in-out;
+			width: 45px;
+			height: 45px;
 
 			.triangle {
-				width: 0;
-				height: 0;
-				border-top: 7px solid transparent;
-				border-bottom: 7px solid transparent;
-				border-left: 12px solid rgb(0, 0, 0);
-				transform: translateX(1px);
-			}
-
-			&:hover {
-				scale: 1.1;
+				border-top: 9px solid transparent;
+				border-bottom: 9px solid transparent;
+				border-left: 14px solid rgb(0, 0, 0);
+				transform: translateX(2.2px);
 			}
 		}
 	}
 
 	.about {
 		font-weight: 400;
+	}
+
+	@media (max-width: $mobileView) {
+		.header {
+			padding-bottom: 0;
+			height: 265px;
+			justify-content: flex-end;
+			gap: 21px;
+
+			h1 {
+				font-size: 2em;
+			}
+		}
+
+		.wallpaper {
+			top: -20px;
+			left: -20px;
+			border-radius: 0;
+			width: calc(100% + 40px);
+		}
+
+		.controls {
+			display: none;
+		}
+
+		.mobile-controls {
+			display: flex;
+		}
+
+		.content {
+			margin-top: 10px;
+		}
 	}
 </style>
