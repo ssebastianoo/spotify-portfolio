@@ -38,10 +38,14 @@
 </div>
 
 <style lang="scss">
+	@import 'src/variables';
+
 	.songs {
 		display: flex;
 		flex-direction: column;
 		margin-top: 20px;
+		overflow: auto;
+		height: calc(var(--fh) - 385px);
 
 		.song {
 			all: unset;
@@ -92,6 +96,46 @@
 
 			h1 {
 				font-size: 3em;
+			}
+		}
+	}
+
+	@media (max-width: $mobileView) {
+		.header {
+			flex-direction: column;
+
+			.left {
+				display: flex;
+				justify-content: center;
+
+				img {
+					height: 130px;
+				}
+			}
+
+			.right {
+				.label {
+					display: none;
+				}
+
+				h1 {
+					font-size: 1.7em;
+				}
+			}
+		}
+
+		.songs {
+			gap: 10px;
+			height: calc(var(--fh) - 360px);
+
+			.labels {
+				display: none;
+			}
+
+			.song {
+				.album {
+					display: none;
+				}
 			}
 		}
 	}

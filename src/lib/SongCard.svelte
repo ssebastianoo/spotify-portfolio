@@ -35,6 +35,8 @@
 </a>
 
 <style lang="scss">
+	@import 'src/variables';
+
 	.song {
 		all: unset;
 		padding: 10px;
@@ -101,6 +103,41 @@
 
 		&:hover {
 			background-color: hsla(0, 0%, 100%, 0.058);
+		}
+	}
+
+	@media (max-width: $mobileView) {
+		.song {
+			padding: 0;
+
+			.album,
+			.number {
+				display: none;
+			}
+
+			.title {
+				width: unset;
+
+				.info {
+					font-size: 0.9em;
+				}
+			}
+
+			.right {
+				width: unset;
+
+				.time {
+					display: none;
+				}
+
+				.like {
+					font-size: 0.9em;
+				}
+			}
+
+			&:hover {
+				background-color: unset;
+			}
 		}
 	}
 </style>
