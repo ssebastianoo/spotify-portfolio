@@ -6,6 +6,10 @@
 @import '@fontsource-variable/nunito';
 @import '@fontsource-variable/work-sans';
 
+:root {
+	--fh: 100vh;
+}
+
 * {
 	margin: 0;
 	-webkit-tap-highlight-color: transparent;

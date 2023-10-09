@@ -9,6 +9,14 @@
 	import './styles.scss';
 	import Fa from 'svelte-fa';
 	import { faHouse, faMagnifyingGlass, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		document.documentElement.style.setProperty('--fh', `${window.innerHeight}px`);
+		window.addEventListener('resize', () => {
+			document.documentElement.style.setProperty('--fh', `${window.innerHeight}px`);
+		});
+	});
 </script>
 
 <div class="container">
@@ -68,7 +76,7 @@
 		grid-template-rows: 100px 1fr 75px;
 		padding: 10px;
 		width: calc(100% - 20px);
-		height: calc(100vh - 20px);
+		height: calc(var(--fh) - 20px);
 		gap: 10px;
 		font-size: 1.15rem;
 		position: relative;
@@ -184,7 +192,7 @@
 			font-weight: 450;
 			padding: 20px;
 			width: calc(100% - 40px);
-			height: calc(100vh - 40px);
+			height: calc(var(--fh) - 40px);
 
 			.section {
 				border-radius: unset;
