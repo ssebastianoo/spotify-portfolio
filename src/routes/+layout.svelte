@@ -55,11 +55,11 @@
 				<Fa icon={faHouse} />
 				<p>Home</p>
 			</a>
-			<a class="link" href="/">
+			<a class="link" href="https://github.com/ssebastianoo/spotify-portfolio" target="_blank">
 				<Fa icon={faMagnifyingGlass} />
-				<p>Search</p>
+				<p>Source code</p>
 			</a>
-			<a class="link" href="/">
+			<a class="link" href="/about">
 				<Fa icon={faBarsStaggered} />
 				<p>Your Library</p>
 			</a>
@@ -210,8 +210,7 @@
 			padding: 0;
 
 			header {
-				position: absolute;
-				right: 0;
+				display: none;
 			}
 		}
 

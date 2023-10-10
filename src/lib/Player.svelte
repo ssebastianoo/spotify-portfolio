@@ -74,6 +74,7 @@
 	@import 'src/variables';
 
 	.player-container {
+		user-select: none;
 		display: flex;
 		height: calc(100% - 20px);
 		padding: 10px;

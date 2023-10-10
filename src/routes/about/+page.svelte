@@ -5,50 +5,52 @@
 	import { faShuffle } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<img src={wallpaper} alt="Wallpaper" class="wallpaper" height="250px" width="100%" />
-<div class="header">
-	<div class="top">
-		<div class="verified">
-			<img src={verified} alt="Verified" width="16px" />
-			<p>Verified Frontend Developer</p>
-		</div>
-		<h1>Sebastiano Girotto</h1>
-	</div>
-	<div class="bottom">
-		<p class="listeners">69,420 monthly listeners</p>
-	</div>
-</div>
-<div class="content">
-	<div class="controls">
-		<div class="play">
-			<div class="triangle" />
-		</div>
-		<p class="following">Following</p>
-	</div>
-	<div class="mobile-controls">
-		<div class="left">
-			<p class="following">Following</p>
-		</div>
-		<div class="right">
-			<div class="shuffle">
-				<Fa icon={faShuffle} />
+<div class="about-container">
+	<img src={wallpaper} alt="Wallpaper" class="wallpaper" height="250px" width="100%" />
+	<div class="header">
+		<div class="top">
+			<div class="verified">
+				<img src={verified} alt="Verified" width="16px" />
+				<p>Verified Frontend Developer</p>
 			</div>
+			<h1>Sebastiano Girotto</h1>
+		</div>
+		<div class="bottom">
+			<p class="listeners">69,420 monthly listeners</p>
+		</div>
+	</div>
+	<div class="content">
+		<div class="controls">
 			<div class="play">
 				<div class="triangle" />
 			</div>
+			<p class="following">Following</p>
 		</div>
-	</div>
-	<div class="about">
-		<p>
-			I'm a Frontend developer from Venice, I'm not limited to JavaScript frameworks, I work with
-			various technologies, from UI tools to Backend languages, from Adobe to Docker, any technology
-			is welcome in my stack if it allows me to create new things.
-			<br /><br />
-			I'm currently studying multimedia arts in high school and I'm planning ot get a computer science
-			degree.
-			<br /><br />
-			I really love rock and indie music,
-		</p>
+		<div class="mobile-controls">
+			<div class="left">
+				<p class="following">Following</p>
+			</div>
+			<div class="right">
+				<div class="shuffle">
+					<Fa icon={faShuffle} />
+				</div>
+				<div class="play">
+					<div class="triangle" />
+				</div>
+			</div>
+		</div>
+		<div class="about">
+			<p>
+				I'm a Frontend developer from Venice, I'm not limited to JavaScript frameworks, I work with
+				various technologies, from UI tools to Backend languages, from Adobe to Docker, any
+				technology is welcome in my stack if it allows me to create new things.
+				<br /><br />
+				I'm currently studying multimedia arts in high school and I'm planning ot get a computer science
+				degree.
+				<br /><br />
+				I really love rock and indie music,
+			</p>
+		</div>
 	</div>
 </div>
 
@@ -213,6 +215,11 @@
 
 		.content {
 			margin-top: 10px;
+		}
+
+		.about {
+			height: calc(var(--fh) - 500px);
+			overflow: auto;
 		}
 	}
 </style>

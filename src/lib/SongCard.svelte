@@ -117,9 +117,10 @@
 
 			.title {
 				width: unset;
+				gap: 12px;
 
-				.info {
-					font-size: 0.9em;
+				img {
+					width: 50px;
 				}
 			}
 

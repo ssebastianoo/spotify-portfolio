@@ -25,6 +25,7 @@
 		font-size: 0.8em;
 		width: calc(33% - 5px);
 		transition: background-color 0.2s ease-in-out;
+		user-select: none;
 
 		&:hover {
 			background-color: hsla(0, 0%, 100%, 0.221);

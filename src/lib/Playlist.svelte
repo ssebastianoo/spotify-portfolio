@@ -109,7 +109,7 @@
 				justify-content: center;
 
 				img {
-					height: 130px;
+					height: 200px;
 				}
 			}
 
@@ -125,8 +125,8 @@
 		}
 
 		.songs {
-			gap: 10px;
-			height: calc(var(--fh) - 360px);
+			gap: 15px;
+			height: calc(var(--fh) - 430px);
 
 			.labels {
 				display: none;
