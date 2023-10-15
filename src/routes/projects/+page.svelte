@@ -17,10 +17,10 @@
 	<SongCard
 		number={1}
 		title="Old portfolio"
-		artist="gir8.it"
+		artist="old.gir8.it"
 		album="HTML + SCSS"
 		cover={portofolio}
-		url={'https://gir8.it'}
+		url={'https://old.gir8.it'}
 	/>
 	<SongCard
 		number={2}
