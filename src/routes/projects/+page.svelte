@@ -1,19 +1,25 @@
 <script lang="ts">
 	import Playlist from '$lib/Playlist.svelte';
 	import SongCard from '$lib/SongCard.svelte';
-	import Blurryface from '$lib/assets/covers/blurryface.jpg';
-	import GTE from '$lib/assets/projects/gte.png';
-	import FD from '$lib/assets/projects/francescadiana.png';
-	import missing from '$lib/assets/missing.png';
+	import Blurryface from '$lib/assets/covers/blurryface.webp';
+	import GTE from '$lib/assets/projects/gte.webp';
+	import FD from '$lib/assets/projects/francescadiana.webp';
+	import portofolio from '$lib/assets/projects/portfolio.webp';
+	import plajhome from '$lib/assets/projects/plajhome.webp';
+	import idle from '$lib/assets/projects/idle.webp';
+	import wheel from '$lib/assets/projects/wheel.webp';
+	import fabiopizzano from '$lib/assets/projects/fabiopizzano.webp';
+	import fastdaw from '$lib/assets/projects/fastdaw.webp';
+	import ytdlp from '$lib/assets/projects/ytdlp.webp';
 </script>
 
 <Playlist title={'Projects'} cover={Blurryface}>
 	<SongCard
 		number={1}
-		title="Portfolio"
+		title="Old portfolio"
 		artist="gir8.it"
-		album="HTML"
-		cover={missing}
+		album="HTML + SCSS"
+		cover={portofolio}
 		url={'https://gir8.it'}
 	/>
 	<SongCard
@@ -28,24 +34,56 @@
 		number={3}
 		title="Francesca Diana"
 		artist="francescadiana.pages.dev"
-		album="HTML"
+		album="HTML + SCSS"
 		cover={FD}
 		url={'https://francescadiana.pages.dev/'}
 	/>
 	<SongCard
 		number={4}
+		title="Fabio Pizzano"
+		artist="fabiopizzano.com"
+		album="HTML + SCSS"
+		cover={fabiopizzano}
+		url={'http://fabiopizzano.com/'}
+	/>
+	<SongCard
+		number={5}
 		title="PlajHome"
 		artist="plajhome.com"
 		album="Astro"
-		cover={missing}
+		cover={plajhome}
 		url={'https://plajhome.com'}
 	/>
 	<SongCard
-		number={4}
+		number={6}
 		title="idle"
 		artist="idle.gir8.it"
 		album="Svelte"
-		cover={missing}
+		cover={idle}
 		url={'https://idle.gir8.it'}
+	/>
+	<SongCard
+		number={7}
+		title="Wheel"
+		artist="wheel.gir8.it"
+		album="Svelte + TS"
+		cover={wheel}
+		url={'https://wheel.gir8.it'}
+	/>
+	<SongCard
+		number={8}
+		title="FastDaw"
+		artist="fastdaw.vercel.app"
+		album="Svelte + TS"
+		cover={fastdaw}
+		url={'https://fastdaw.vercel.app/'}
+	/>
+	<SongCard
+		number={9}
+		title="YT-DLP Telegram"
+		artist="github.com"
+		album="Svelte + TS"
+		cover={ytdlp}
+		url={'https://github.com/ssebastianoo/yt-dlp-telegram'}
 	/>
 </Playlist>

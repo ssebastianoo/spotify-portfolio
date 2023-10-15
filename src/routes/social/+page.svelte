@@ -1,9 +1,11 @@
 <script lang="ts">
-	import Github from '$lib/assets/social/github.png';
-	import Twitter from '$lib/assets/social/twitter.png';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.webp';
 	import Playlist from '$lib/Playlist.svelte';
 	import SongCard from '$lib/SongCard.svelte';
-	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
+	import Github from '$lib/assets/social/github.webp';
+	import Mastodon from '$lib/assets/social/mastodon.webp';
+	import Twitter from '$lib/assets/social/twitter.webp';
+	import Linkedin from '$lib/assets/social/linkedin.webp';
 </script>
 
 <Playlist title={'Social'} cover={TOP}>
@@ -17,10 +19,27 @@
 	/>
 	<SongCard
 		number={2}
+		title="Mastodon"
+		artist="fosstodon.org"
+		album="ssebastianoo"
+		cover={Mastodon}
+		rel={true}
+		url={'https://fosstodon.org/@ssebastianoo'}
+	/>
+	<SongCard
+		number={3}
 		title="Twitter"
 		artist="x.com"
 		album="ssebastianoo"
 		cover={Twitter}
 		url={'https://twitter.com/ssebastianoo'}
+	/>
+	<SongCard
+		number={4}
+		title="Linkedin"
+		artist="linkedin.com"
+		album="sebastianogirotto"
+		cover={Linkedin}
+		url={'https://linkedin.com/in/sebastianogirotto'}
 	/>
 </Playlist>

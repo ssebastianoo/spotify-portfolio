@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Player from '$lib/Player.svelte';
 	import LibraryCard from '$lib/LibraryCard.svelte';
-	import Blurryface from '$lib/assets/covers/blurryface.jpg';
-	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
-	import Vessel from '$lib/assets/covers/vessel.jpg';
-	import Trench from '$lib/assets/covers/trench.jpg';
-	import seb from '$lib/assets/seb.png';
+	import Blurryface from '$lib/assets/covers/blurryface.webp';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.webp';
+	import Vessel from '$lib/assets/covers/vessel.webp';
+	import Trench from '$lib/assets/covers/trench.webp';
+	import seb from '$lib/assets/seb.webp';
 	import './styles.scss';
 	import Fa from 'svelte-fa';
 	import { faHouse, faMagnifyingGlass, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';

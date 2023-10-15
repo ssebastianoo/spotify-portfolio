@@ -1,10 +1,25 @@
 <script lang="ts">
-	import Github from '$lib/assets/social/github.png';
-	import Twitter from '$lib/assets/social/twitter.png';
 	import Playlist from '$lib/Playlist.svelte';
 	import SongCard from '$lib/SongCard.svelte';
-	import Vessel from '$lib/assets/covers/vessel.jpg';
-	import missing from '$lib/assets/missing.png';
+	import Vessel from '$lib/assets/covers/vessel.webp';
+	import html from '$lib/assets/skills/html.webp';
+	import javascript from '$lib/assets/skills/javascript.webp';
+	import typescript from '$lib/assets/skills/typescript.webp';
+	import figma from '$lib/assets/skills/figma.webp';
+	import python from '$lib/assets/skills/python.webp';
+	import svelte from '$lib/assets/skills/svelte.webp';
+	import react from '$lib/assets/skills/react.webp';
+	import astro from '$lib/assets/skills/astro.webp';
+	import scss from '$lib/assets/skills/scss.webp';
+	import linux from '$lib/assets/skills/linux.webp';
+	import nginx from '$lib/assets/skills/nginx.webp';
+	import postgres from '$lib/assets/skills/postgres.webp';
+	import firebase from '$lib/assets/skills/firebase.webp';
+	import git from '$lib/assets/skills/git.webp';
+	import docker from '$lib/assets/skills/docker.webp';
+	import illustrator from '$lib/assets/skills/illustrator.webp';
+	import photoshop from '$lib/assets/skills/photoshop.webp';
+	import premiere from '$lib/assets/skills/premiere.webp';
 </script>
 
 <Playlist title="Skills" cover={Vessel}>
@@ -13,7 +28,7 @@
 		title="HTML / CSS"
 		artist="not a programming language"
 		album="3+ years"
-		cover={missing}
+		cover={html}
 		url={'https://it.wikipedia.org/wiki/HTML'}
 	/>
 	<SongCard
@@ -21,7 +36,7 @@
 		title="JavaScript"
 		artist="only one thread???"
 		album="3+ years"
-		cover={missing}
+		cover={javascript}
 		url={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}
 	/>
 	<SongCard
@@ -29,15 +44,127 @@
 		title="TypeScript"
 		artist="love and hate"
 		album="1+ year"
-		cover={missing}
+		cover={typescript}
 		url={'https://www.typescriptlang.org/'}
 	/>
 	<SongCard
-		number={3}
+		number={4}
+		title="Figma"
+		artist="love love love"
+		album="1+ years"
+		cover={figma}
+		url={'https://www.figma.com/'}
+	/>
+	<SongCard
+		number={5}
 		title="Python"
 		artist="where it all started"
-		album="3+ years"
-		cover={missing}
+		album="4+ years"
+		cover={python}
 		url={'https://www.python.org/'}
+	/>
+	<SongCard
+		number={6}
+		title="Svelte"
+		artist="my beloved"
+		album="2+ years"
+		cover={svelte}
+		url={'https://svelte.dev/'}
+	/>
+	<SongCard
+		number={7}
+		title="React"
+		artist="facebook kid"
+		album="2+ years"
+		cover={react}
+		url={'https://reactjs.org/'}
+	/>
+	<SongCard
+		number={8}
+		title="Astro"
+		artist="svelte + react"
+		album="1+ year"
+		cover={astro}
+		url={'https://astro.build/'}
+	/>
+	<SongCard
+		number={9}
+		title="SCSS"
+		artist="never without it"
+		album="3+ years"
+		cover={scss}
+		url={'https://sass-lang.com/'}
+	/>
+	<SongCard
+		number={10}
+		title="Linux"
+		artist="raspberrypi nerd"
+		album="3+ years"
+		cover={linux}
+		url={'https://en.wikipedia.org/wiki/Linux'}
+	/>
+	<SongCard
+		number={11}
+		title="Nginx"
+		artist="ip shield"
+		album="3+ years"
+		cover={nginx}
+		url={'https://www.nginx.com/'}
+	/>
+	<SongCard
+		number={12}
+		title="PostgreSQL"
+		artist="best db"
+		album="2+ years"
+		cover={postgres}
+		url={'https://www.postgresql.org/'}
+	/>
+	<SongCard
+		number={13}
+		title="Firebase"
+		artist="google kid"
+		album="1+ years"
+		cover={firebase}
+		url={'https://firebase.google.com/'}
+	/>
+	<SongCard
+		number={14}
+		title="Git"
+		artist="git gud"
+		album="4+ years"
+		cover={git}
+		url={'https://git-scm.com/'}
+	/>
+	<SongCard
+		number={15}
+		title="Docker"
+		artist="my greatest fear"
+		album="1+ year"
+		cover={docker}
+		url={'https://www.docker.com/'}
+	/>
+	<SongCard
+		number={16}
+		title="Illustrator"
+		artist="vectorrrr"
+		album="5+ years"
+		cover={illustrator}
+		url={'https://www.adobe.com/products/illustrator.html'}
+	/>
+	<SongCard
+		number={17}
+		title="Photoshop"
+		artist="pixellll"
+		album="6+ years"
+		cover={photoshop}
+		url={'https://www.adobe.com/products/photoshop.html'}
+	/>
+	<SongCard
+		number={18}
+		title="Premiere"
+		artist="I like moviess"
+		album="5+ years"
+		cover={premiere}
+		url={'https://www.adobe.com/products/premiere.html'}
 	/>
 </Playlist>

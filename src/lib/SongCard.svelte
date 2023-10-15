@@ -8,9 +8,10 @@
 	export let album: string;
 	export let url: string;
 	export let number: Number;
+	export let rel: boolean = false;
 </script>
 
-<a class="song" href={url} target="_blank">
+<a class="song" href={url} target="_blank" rel={rel ? 'me' : ''}>
 	<div class="left">
 		<div class="title">
 			<p class="number">{number}</p>
@@ -85,6 +86,10 @@
 			align-items: center;
 			gap: 10px;
 			opacity: 0.8;
+		}
+
+		.number {
+			width: 14px;
 		}
 
 		.like {

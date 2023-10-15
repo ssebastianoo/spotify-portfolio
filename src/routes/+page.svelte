@@ -1,10 +1,10 @@
 <script lang="ts">
 	import PlaylistCard from '$lib/PlaylistCard.svelte';
 
-	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
-	import Vessel from '$lib/assets/covers/vessel.jpg';
-	import Blurryface from '$lib/assets/covers/blurryface.jpg';
-	import Trench from '$lib/assets/covers/trench.jpg';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.webp';
+	import Vessel from '$lib/assets/covers/vessel.webp';
+	import Blurryface from '$lib/assets/covers/blurryface.webp';
+	import Trench from '$lib/assets/covers/trench.webp';
 </script>
 
 <h2>Hey there, I'm Seb!</h2>

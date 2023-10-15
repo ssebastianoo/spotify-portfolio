@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { faClock } from '@fortawesome/free-solid-svg-icons';
-	import TOP from '$lib/assets/covers/twenty_one_pilots.png';
+	import TOP from '$lib/assets/covers/twenty_one_pilots.webp';
 	import Fa from 'svelte-fa';
 
 	export let title: string;

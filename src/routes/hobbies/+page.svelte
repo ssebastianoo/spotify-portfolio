@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Playlist from '$lib/Playlist.svelte';
 	import SongCard from '$lib/SongCard.svelte';
-	import Trench from '$lib/assets/covers/trench.jpg';
-	import missing from '$lib/assets/missing.png';
+	import Trench from '$lib/assets/covers/trench.webp';
+	import banana from '$lib/assets/hobbies/banana.webp';
+	import piano from '$lib/assets/hobbies/piano.webp';
 </script>
 
 <Playlist title="Hobbies" cover={Trench}>
@@ -11,7 +12,7 @@
 		title="Photography"
 		artist="📷"
 		album="sony team"
-		cover={missing}
+		cover={banana}
 		url={'https://unsplash.com/@ssebastianoo'}
 	/>
 	<SongCard
@@ -19,7 +20,7 @@
 		title="Music Production"
 		artist="soundcloud"
 		album="fl studio kid"
-		cover={missing}
+		cover={piano}
 		url={'https://soundcloud.com/sebps'}
 	/>
 </Playlist>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import wallpaper from '$lib/assets/wallpaper.jpg';
-	import verified from '$lib/assets/icons/verified.png';
+	import wallpaper from '$lib/assets/wallpaper.webp';
+	import verified from '$lib/assets/icons/verified.webp';
 	import Fa from 'svelte-fa';
 	import { faShuffle } from '@fortawesome/free-solid-svg-icons';
 </script>
@@ -41,14 +41,14 @@
 		</div>
 		<div class="about">
 			<p>
-				I'm a Frontend developer from Venice, I'm not limited to JavaScript frameworks, I work with
-				various technologies, from UI tools to Backend languages, from Adobe to Docker, any
-				technology is welcome in my stack if it allows me to create new things.
+				I'm a Frontend developer from Venice, I love to design, developer and deploy silly web apps.
+				I really enjoy tech, photography, music and graphic design, I'm currently studying
+				multimedia arts in high school and I'm planning on getting a computer science degree. In my
+				free time if I'm not coding I'm probably making music with FL Studio.
 				<br /><br />
-				I'm currently studying multimedia arts in high school and I'm planning ot get a computer science
-				degree.
-				<br /><br />
-				I really love rock and indie music,
+				My favorite and usual stuck is SvelteKit, TypeScript, SCSS and Postgres, but I'm open to any
+				modern technology. I started way back in 2018 with Python to then move to JavaScript, ending
+				in the Frontend world. More of me on my <a href="/social">social media</a>.
 			</p>
 		</div>
 	</div>
@@ -184,6 +184,10 @@
 
 	.about {
 		font-weight: 400;
+
+		a {
+			color: $accent;
+		}
 	}
 
 	@media (max-width: $mobileView) {
