@@ -11,11 +11,20 @@
 	import fabiopizzano from '$lib/assets/projects/fabiopizzano.webp';
 	import fastdaw from '$lib/assets/projects/fastdaw.webp';
 	import ytdlp from '$lib/assets/projects/ytdlp.webp';
+	import cronus from '$lib/assets/projects/cronus.webp';
 </script>
 
 <Playlist title={'Projects'} cover={Blurryface}>
 	<SongCard
 		number={1}
+		title="Cronus"
+		artist="cronus.lol"
+		album="Next.js"
+		cover={cronus}
+		url={'https://cronus.lol'}
+	/>
+	<SongCard
+		number={2}
 		title="Old portfolio"
 		artist="old.gir8.it"
 		album="HTML + SCSS"
@@ -23,7 +32,7 @@
 		url={'https://old.gir8.it'}
 	/>
 	<SongCard
-		number={2}
+		number={3}
 		title="Guess The Element"
 		artist="gte.gir8.it"
 		album="Svelte"
@@ -31,7 +40,7 @@
 		url={'https://gte.gir8.it'}
 	/>
 	<SongCard
-		number={3}
+		number={4}
 		title="Francesca Diana"
 		artist="francescadiana.pages.dev"
 		album="HTML + SCSS"
@@ -39,7 +48,7 @@
 		url={'https://francescadiana.pages.dev/'}
 	/>
 	<SongCard
-		number={4}
+		number={5}
 		title="Fabio Pizzano"
 		artist="fabiopizzano.com"
 		album="HTML + SCSS"
@@ -47,7 +56,7 @@
 		url={'http://fabiopizzano.com/'}
 	/>
 	<SongCard
-		number={5}
+		number={6}
 		title="PlajHome"
 		artist="plajhome.com"
 		album="Astro"
@@ -55,7 +64,7 @@
 		url={'https://plajhome.com'}
 	/>
 	<SongCard
-		number={6}
+		number={7}
 		title="idle"
 		artist="idle.gir8.it"
 		album="Svelte"
@@ -63,7 +72,7 @@
 		url={'https://idle.gir8.it'}
 	/>
 	<SongCard
-		number={7}
+		number={8}
 		title="Wheel"
 		artist="wheel.gir8.it"
 		album="Svelte + TS"
@@ -71,7 +80,7 @@
 		url={'https://wheel.gir8.it'}
 	/>
 	<SongCard
-		number={8}
+		number={9}
 		title="FastDaw"
 		artist="fastdaw.vercel.app"
 		album="Svelte + TS"
@@ -79,7 +88,7 @@
 		url={'https://fastdaw.vercel.app/'}
 	/>
 	<SongCard
-		number={9}
+		number={10}
 		title="YT-DLP Telegram"
 		artist="github.com"
 		album="Svelte + TS"
