@@ -41,14 +41,16 @@
 		</div>
 		<div class="about">
 			<p>
-				I'm a Frontend developer from Venice, I love to design, developer and deploy silly web apps.
-				I really enjoy tech, photography, music and graphic design, I'm currently studying
-				multimedia arts in high school and I'm planning on getting a computer science degree. In my
-				free time if I'm not coding I'm probably making music with FL Studio.
+				I'm a Frontend developer from Venice, I love to design and develop silly web apps. I really
+				enjoy tech, photography, music and graphic design, I'm currently studying multimedia arts in
+				high school and I'm planning on getting a computer science degree. In my free time, when I'm
+				not coding, I make music.
 				<br /><br />
-				My favorite and usual stuck is SvelteKit, TypeScript, SCSS and Postgres, but I'm open to any
-				modern technology. I started way back in 2018 with Python to then move to JavaScript, ending
-				in the Frontend world. More of me on my <a href="/social">social media</a>.
+				I have experience with both frontend and backend technologies, I started using Python in 2018
+				to then learn JavaScript and TypeScript with a focus on React and Svelte. I worked a lot with
+				SvelteKit and Next.js, using tools like Tailwind and Shadcn. I also used Linux a lot during the
+				years, gaining experience with bash scripting and VPS infrastructures. more of me on my
+				<a href="/social">social media</a>.
 			</p>
 		</div>
 	</div>

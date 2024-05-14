@@ -20,6 +20,10 @@
 	import illustrator from '$lib/assets/skills/illustrator.webp';
 	import photoshop from '$lib/assets/skills/photoshop.webp';
 	import premiere from '$lib/assets/skills/premiere.webp';
+	import tailwind from '$lib/assets/skills/tailwind.webp';
+	import shadcn from '$lib/assets/skills/shadcn.webp';
+	import caddy from '$lib/assets/skills/caddy.webp';
+	import supabase from '$lib/assets/skills/supabase.webp';
 </script>
 
 <Playlist title="Skills" cover={Vessel}>
@@ -89,6 +93,22 @@
 	/>
 	<SongCard
 		number={9}
+		title="Tailwind"
+		artist="css was boring"
+		album="1+ year"
+		cover={tailwind}
+		url={'https://tailwindcss.com/'}
+	/>
+	<SongCard
+		number={10}
+		title="shadcn/ui"
+		artist="it just works"
+		album="months"
+		cover={shadcn}
+		url={'https://ui.shadcn.com/'}
+	/>
+	<SongCard
+		number={11}
 		title="SCSS"
 		artist="never without it"
 		album="3+ years"
@@ -96,7 +116,7 @@
 		url={'https://sass-lang.com/'}
 	/>
 	<SongCard
-		number={10}
+		number={12}
 		title="Linux"
 		artist="raspberrypi nerd"
 		album="3+ years"
@@ -104,7 +124,7 @@
 		url={'https://en.wikipedia.org/wiki/Linux'}
 	/>
 	<SongCard
-		number={11}
+		number={13}
 		title="Nginx"
 		artist="ip shield"
 		album="3+ years"
@@ -112,7 +132,15 @@
 		url={'https://www.nginx.com/'}
 	/>
 	<SongCard
-		number={12}
+		number={14}
+		title="Caddy"
+		artist="better nginx"
+		album="months"
+		cover={caddy}
+		url={'https://caddyserver.com/'}
+	/>
+	<SongCard
+		number={15}
 		title="PostgreSQL"
 		artist="best db"
 		album="2+ years"
@@ -120,15 +148,23 @@
 		url={'https://www.postgresql.org/'}
 	/>
 	<SongCard
-		number={13}
+		number={16}
+		title="Supabase"
+		artist="better firebase"
+		album="2+ years"
+		cover={supabase}
+		url={'https://supabase.com/'}
+	/>
+	<SongCard
+		number={17}
 		title="Firebase"
 		artist="google kid"
-		album="1+ years"
+		album="2+ years"
 		cover={firebase}
 		url={'https://firebase.google.com/'}
 	/>
 	<SongCard
-		number={14}
+		number={18}
 		title="Git"
 		artist="git gud"
 		album="4+ years"
@@ -136,7 +172,7 @@
 		url={'https://git-scm.com/'}
 	/>
 	<SongCard
-		number={15}
+		number={19}
 		title="Docker"
 		artist="my greatest fear"
 		album="1+ year"
@@ -144,7 +180,7 @@
 		url={'https://www.docker.com/'}
 	/>
 	<SongCard
-		number={16}
+		number={20}
 		title="Illustrator"
 		artist="vectorrrr"
 		album="5+ years"
@@ -152,7 +188,7 @@
 		url={'https://www.adobe.com/products/illustrator.html'}
 	/>
 	<SongCard
-		number={17}
+		number={21}
 		title="Photoshop"
 		artist="pixellll"
 		album="6+ years"
@@ -160,7 +196,7 @@
 		url={'https://www.adobe.com/products/photoshop.html'}
 	/>
 	<SongCard
-		number={18}
+		number={22}
 		title="Premiere"
 		artist="I like moviess"
 		album="5+ years"
