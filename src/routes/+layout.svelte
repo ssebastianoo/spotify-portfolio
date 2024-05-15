@@ -5,7 +5,10 @@
 	import TOP from '$lib/assets/covers/twenty_one_pilots.webp';
 	import Vessel from '$lib/assets/covers/vessel.webp';
 	import Trench from '$lib/assets/covers/trench.webp';
+	import Clancy from '$lib/assets/covers/clancy.webp';
+	import RAG from '$lib/assets/covers/rag.webp';
 	import seb from '$lib/assets/seb.webp';
+
 	import './styles.scss';
 	import Fa from 'svelte-fa';
 	import { faHouse, faMagnifyingGlass, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
@@ -45,6 +48,8 @@
 			<LibraryCard title="Social" artist="seb" cover={TOP} url="/social" />
 			<LibraryCard title="Skills" artist="seb" cover={Vessel} url="/skills" />
 			<LibraryCard title="Hobbies" artist="seb" cover={Trench} url="/hobbies" />
+			<LibraryCard title="About me" artist="seb" cover={Clancy} url="/about" />
+			<LibraryCard title="Curriculum" artist="seb" cover={RAG} url="/CV.pdf" />
 		</div>
 	</div>
 	<div class="section player">
