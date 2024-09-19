@@ -41,10 +41,9 @@
 		</div>
 		<div class="about">
 			<p>
-				I'm a Frontend developer from Venice, I love to design and develop silly web apps. I really
-				enjoy tech, photography, music and graphic design, I'm currently studying multimedia arts in
-				high school and I'm planning on getting a computer science degree. In my free time, when I'm
-				not coding, I make music.
+				I'm a Frontend developer from Venice, I study computer science at Ca' Foscari University of
+				Venice. I love designing and developing silly web apps, tech, photography, music and graphic
+				design. In my free time, when I'm not coding, I make music.
 				<br /><br />
 				I have experience with both frontend and backend technologies, I started using Python in 2018
 				to then learn JavaScript and TypeScript with a focus on React and Svelte. I worked a lot with
