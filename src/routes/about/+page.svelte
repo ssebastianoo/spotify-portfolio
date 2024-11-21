@@ -22,7 +22,7 @@
 	<div class="content">
 		<div class="controls">
 			<div class="play">
-				<div class="triangle" />
+				<div class="triangle"></div>
 			</div>
 			<p class="following">Following</p>
 		</div>
@@ -35,7 +35,7 @@
 					<Fa icon={faShuffle} />
 				</div>
 				<div class="play">
-					<div class="triangle" />
+					<div class="triangle"></div>
 				</div>
 			</div>
 		</div>

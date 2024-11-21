@@ -2,13 +2,25 @@
 	import Fa from 'svelte-fa';
 	import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
-	export let cover: string;
-	export let title: string;
-	export let artist: string;
-	export let album: string;
-	export let url: string;
-	export let number: Number;
-	export let rel: boolean = false;
+	interface Props {
+		cover: string;
+		title: string;
+		artist: string;
+		album: string;
+		url: string;
+		number: Number;
+		rel?: boolean;
+	}
+
+	let {
+		cover,
+		title,
+		artist,
+		album,
+		url,
+		number,
+		rel = false
+	}: Props = $props();
 </script>
 
 <a class="song" href={url} target="_blank" rel={rel ? 'me' : ''}>

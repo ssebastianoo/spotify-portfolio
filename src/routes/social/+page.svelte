@@ -6,6 +6,7 @@
 	import Mastodon from '$lib/assets/social/mastodon.webp';
 	import Twitter from '$lib/assets/social/twitter.webp';
 	import Linkedin from '$lib/assets/social/linkedin.webp';
+	import Bluesky from '$lib/assets/social/bluesky.webp';
 </script>
 
 <Playlist title={'Social'} cover={TOP}>
@@ -28,11 +29,11 @@
 	/>
 	<SongCard
 		number={3}
-		title="Twitter"
-		artist="x.com"
-		album="ssebastianoo"
-		cover={Twitter}
-		url={'https://twitter.com/ssebastianoo'}
+		title="Bluesky"
+		artist="bsky.app"
+		album="gir8.it"
+		cover={Bluesky}
+		url={'https://bsky.app/profile/gir8.it'}
 	/>
 	<SongCard
 		number={4}
@@ -41,5 +42,13 @@
 		album="sebastianogirotto"
 		cover={Linkedin}
 		url={'https://linkedin.com/in/sebastianogirotto'}
+	/>
+	<SongCard
+		number={5}
+		title="Twitter"
+		artist="twitter.com"
+		album="ssebastianoo"
+		cover={Twitter}
+		url={'https://twitter.com/ssebastianoo'}
 	/>
 </Playlist>

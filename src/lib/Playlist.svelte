@@ -1,10 +1,16 @@
 <script lang="ts">
 	import { faClock } from '@fortawesome/free-solid-svg-icons';
-	import TOP from '$lib/assets/covers/twenty_one_pilots.webp';
 	import Fa from 'svelte-fa';
 
-	export let title: string;
-	export let cover: string;
+	interface Props {
+		title: string;
+		cover: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { title, cover, children }: Props = $props();
+
+	const children_render = $derived(children);
 </script>
 
 <div class="playlist">
@@ -29,11 +35,11 @@
 				</div>
 			</div>
 			<div class="right">
-				<div />
+				<div></div>
 				<Fa icon={faClock} />
 			</div>
 		</div>
-		<slot />
+		{@render children_render?.()}
 	</div>
 </div>
 

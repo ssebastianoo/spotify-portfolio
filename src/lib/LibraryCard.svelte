@@ -2,12 +2,21 @@
 	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 
-	export let title: string;
-	export let artist: string;
-	export let cover: string;
-	export let url: string;
+	interface Props {
+		title: string;
+		artist: string;
+		cover: string;
+		url: string;
+	}
 
-	let active = false;
+	let {
+		title,
+		artist,
+		cover,
+		url
+	}: Props = $props();
+
+	let active = $state(false);
 
 	function checkActive() {
 		if (window.location.pathname === url) {

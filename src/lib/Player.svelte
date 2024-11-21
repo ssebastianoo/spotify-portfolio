@@ -46,7 +46,7 @@
 		<div class="time">
 			<span>0:58</span>
 			<div class="line">
-				<div />
+				<div></div>
 			</div>
 			<span>3:44</span>
 		</div>
@@ -59,12 +59,12 @@
 			<div class="icon">
 				<Fa icon={faHeart} />
 			</div>
-			<div class="icon triangle" />
+			<div class="icon triangle"></div>
 		</div>
 		<div class="volume">
 			<Fa icon={faVolumeLow} />
 			<div class="line">
-				<div />
+				<div></div>
 			</div>
 		</div>
 	</div>

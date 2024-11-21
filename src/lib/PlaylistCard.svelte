@@ -1,7 +1,11 @@
 <script lang="ts">
-	export let cover: string;
-	export let title: string;
-	export let url: string;
+	interface Props {
+		cover: string;
+		title: string;
+		url: string;
+	}
+
+	let { cover, title, url }: Props = $props();
 </script>
 
 <a class="card" href={url}>

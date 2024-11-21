@@ -14,12 +14,20 @@
 	import { faHouse, faMagnifyingGlass, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
 	import { onMount } from 'svelte';
 
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+
 	onMount(() => {
 		document.documentElement.style.setProperty('--fh', `${window.innerHeight}px`);
 		window.addEventListener('resize', () => {
 			document.documentElement.style.setProperty('--fh', `${window.innerHeight}px`);
 		});
 	});
+
+	const children_render = $derived(children);
 </script>
 
 <div class="container">
@@ -39,7 +47,7 @@
 				<img width="30" src={seb} alt="my avatar" />
 			</a>
 		</header>
-		<slot />
+		{@render children_render?.()}
 	</div>
 	<div class="section library">
 		<p>Your Library</p>
