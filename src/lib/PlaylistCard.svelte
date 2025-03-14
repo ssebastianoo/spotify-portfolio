@@ -9,7 +9,7 @@
 </script>
 
 <a class="card" href={url}>
-	<img width="74" src={cover} alt="album cover" />
+	<img width="74" height="74" src={cover} alt="album cover" />
 	<h3>{title}</h3>
 </a>
 
@@ -18,6 +18,7 @@
 
 	.card {
 		all: unset;
+		min-height: 74px;
 		cursor: pointer;
 		display: flex;
 		align-items: center;

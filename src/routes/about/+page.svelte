@@ -67,6 +67,7 @@
 		filter: brightness(0.6);
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
+		z-index: -1;
 	}
 
 	.header {
@@ -192,6 +193,11 @@
 	}
 
 	@media (max-width: $mobileView) {
+		.about-container {
+			height: calc(var(--fh) - 152px);
+			overflow: auto;
+		}
+
 		.header {
 			padding-bottom: 0;
 			height: 265px;
@@ -220,11 +226,6 @@
 
 		.content {
 			margin-top: 10px;
-		}
-
-		.about {
-			height: calc(var(--fh) - 500px);
-			overflow: auto;
 		}
 	}
 </style>

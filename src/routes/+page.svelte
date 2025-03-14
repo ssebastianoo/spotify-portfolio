@@ -20,11 +20,23 @@
 </div>
 
 <style lang="scss">
+	@import 'src/variables';
+
 	.list {
 		margin-top: 20px;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 12px 0;
+	}
+
+	@media (max-width: $mobileView) {
+		.list {
+			flex-direction: column;
+			height: calc(var(--fh) - 213px);
+			flex-wrap: nowrap;
+			overflow: auto;
+			justify-content: unset;
+		}
 	}
 </style>
